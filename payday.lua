@@ -104,6 +104,10 @@ _G.NetworkMember = _G.NetworkMember
 ---@field set_server_joinable fun(self: PD_Matchmaker, to: boolean)
 ---@field set_num_players     fun(self: PD_Matchmaker, to: number)
 
+---@class PD_CoreMenuCallbackHandler : Diesel_Class
+---@class PD_MenuCallbackHandler : Diesel_Class<PD_CoreMenuCallbackHandler>, Diesel_Class, table
+_G.MenuCallbackHandler = _G.MenuCallbackHandler
+
 ---@class PD_NetworkMatchMakingSTEAM : Diesel_Class
 _G.NetworkMatchMakingSTEAM = _G.NetworkMatchMakingSTEAM
 
@@ -119,6 +123,11 @@ _G.PD_PlatformManager = _G.PD_PlatformManager
 ---| "Playing"
 ---| "MPLobby"
 ---| "MPLobby_no_invite"
+
+---@alias PD_Menu_BGType
+---| "full"
+---| "half"
+---| "none"
 
 ---@class PD_HudManager : Diesel_Class
 ---@field script               fun(self: PD_HudManager, name: Diesel_Idstring) : any
