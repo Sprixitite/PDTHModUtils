@@ -46,6 +46,7 @@ _G.mvector3 = {}
 
 ---@class Diesel_Application
 ---@field editor fun(self: Diesel_Application) : boolean
+---@field create_world_viewport function
 _G.Application = {}
 
 ---@class Diesel_Unit

@@ -109,6 +109,9 @@ _G.NetworkMember = _G.NetworkMember
 _G.MenuCallbackHandler = _G.MenuCallbackHandler
 
 ---@class PD_NetworkMatchMakingSTEAM : Diesel_Class
+---@field _on_memberstatus_change function
+---@field _on_data_update         function
+---@field _on_chat_message        function
 _G.NetworkMatchMakingSTEAM = _G.NetworkMatchMakingSTEAM
 
 ---@class PD_PlatformManager : Diesel_Class

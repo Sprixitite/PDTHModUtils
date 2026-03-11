@@ -22,7 +22,9 @@ _G.pcall = nil
 
 ---@class BLT_Global
 ---@field pcall fun(fn: function, ...: any) : true, ... : any
----@field pcall fun(fn: function, ...: any) : false, string, ... : any
+---@field pcall fun(fn: function, ...: any) : false, string
+---@field xpcall fun(fn: function, errHndl: (fun(err: string) : string), ... : any) : true, ... : any
+---@field xpcall fun(fn: function, errHndl: (fun(err: string) : string), ... : any) : false, string
 _G.blt = {}
 
 ---@type string
